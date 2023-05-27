@@ -17,10 +17,7 @@ header::after {
 .logo {
     float : left;
     padding: 0.625rem 1.25rem;
-    filter: invert(24%) sepia(73%) saturate(3703%) hue-rotate(356deg) brightness(94%) contrast(93%);
-    position: fixed;
-    top: 0;
-    
+    filter: invert(24%) sepia(73%) saturate(3703%) hue-rotate(356deg) brightness(94%) contrast(93%);  
 }
 .container {
     width : 80%;
@@ -28,9 +25,6 @@ header::after {
 }
 nav {
     text-align: right;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 nav a1 {
@@ -43,7 +37,7 @@ nav a1 {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0rem 5.625rem;
+    padding: 0rem 0.625rem;
     padding-top: 26px;
 }
 nav ul {
