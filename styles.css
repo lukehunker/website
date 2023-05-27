@@ -2,6 +2,7 @@
 body {
     margin: 0;
     background-color: #efe6d5;
+    overflow-x: hidden;
 }
 
 /*Navbar and header section */
@@ -15,8 +16,10 @@ header::after {
 }
 .logo {
     float : left;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     filter: invert(24%) sepia(73%) saturate(3703%) hue-rotate(356deg) brightness(94%) contrast(93%);
+    position: fixed;
+    top: 0;
     
 }
 .container {
@@ -25,7 +28,11 @@ header::after {
 }
 nav {
     text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
 nav a1 {
     float : left;
     font-size: x-large;
@@ -36,7 +43,7 @@ nav a1 {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0px 10px;
+    padding: 0rem 5.625rem;
     padding-top: 26px;
 }
 nav ul {
