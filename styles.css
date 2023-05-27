@@ -4,75 +4,66 @@ body {
     background-color: #efe6d5;
 }
 
+/*Navbar and header section */
 header {
-    background-color: #e73212;
+    background-color: #efe6d5;
 }
-
 header::after {
     content: '';
     display: table;
     clear: both;
 }
-
-
 .logo {
     float : left;
     padding: 10px 20px;
-    filter: invert(89%) sepia(18%) saturate(181%) hue-rotate(357deg) brightness(104%) contrast(88%);
+    filter: invert(24%) sepia(73%) saturate(3703%) hue-rotate(356deg) brightness(94%) contrast(93%);
+    
 }
-
 .container {
     width : 80%;
     margin : 0 auto;
-
 }
-
 nav {
     text-align: right;
 }
-
 nav a1 {
     float : left;
-    font-size: larger;
-    font-family: sans-serif;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
     border : none;
-    color:#efe6d5;
+    color:#e73213;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     padding: 0px 10px;
     padding-top: 26px;
 }
-
 nav ul {
     margin : 0;
     padding : 0px 30px;
-    list-style: none;
-    
+    list-style: none; 
 }
-
 nav a {
-    background-color: #e73212;
-        /* Red */
-        font-family: sans-serif;
-        border: none;
-        color: #efe6d5;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        display: inline-block;
-        font-size: 16px;
-        
+    background-color: #efe6d5;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    border: none;
+    color: #e73213;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: larger;       
 }
 nav a:hover {
-    color: #9dbeb7;
+    color: #e73213;
 }
-
 nav a::before {
     content : '';
     display:block;
     height: 5px;
-    background-color: #9dbeb7;
+    background-color: #e73213;
 
     position: absolute;
     top: 0;
@@ -81,15 +72,135 @@ nav a::before {
     transition: all ease-in-out 200ms;
 
 }
-
 nav a:hover::before {
     width : 100%;
 }
-
 nav li {
     display: inline-block;
     margin-left: 75px;
     padding-top: 27px;
-
     position: relative;
 }
+
+
+/* Main section of home page */
+.main_container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin : 0 auto;
+    height: 70vh;
+    z-index: 1;
+    width : 100%;
+    padding: 0 50px;
+
+}
+.main_content h1 {
+    color: #e73212;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    
+}
+
+.main_content h2{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+
+
+
+/* About me Section */
+.about_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 40vh;
+    z-index: 1;
+    width: 100%;
+    padding: 0 50px;
+}
+.about_content h1 {
+    color: #e73212;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+}
+
+.about_content p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/*Contact me section */
+
+.phone{
+    float : left;
+    padding: 10px 20px;
+}
+
+
+.contactinfo_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 40vh;
+    z-index: 1;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.contactinfo_content p1{
+    margin: 0 auto;
+    width: 100%;
+    color:#e73213;
+}
+
+.conactme_container {
+    border-radius: 5px;
+    background-color: #efe6d5;
+    padding : 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text],select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #efe6d5;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #e73213;
+    color: #efe6d5;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: darkred;
+}
+
